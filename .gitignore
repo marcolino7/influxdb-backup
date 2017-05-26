@@ -1,0 +1,9 @@
+#/*.sdf
+
+# Ignore everything
+*.exe
+
+# But not these files...
+#!.gitignore
+#!*.sh
+#!
