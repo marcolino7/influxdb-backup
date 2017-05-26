@@ -2,6 +2,7 @@
 
 # Ignore everything
 *.exe
+*.bat
 
 # But not these files...
 #!.gitignore

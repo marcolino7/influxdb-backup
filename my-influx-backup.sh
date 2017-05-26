@@ -57,10 +57,10 @@ restore() {
     echo "Removing out of date backup"
     rm -rf $BACKUP_ARCHIVE_PATH
   fi
-  # Get backup file from S3
+  # Get backup file Filesysteysm
   echo "Downloading latest backup from S3"
-  if aws s3 cp s3://${S3_BUCKET}/${S3_KEY_PREFIX}latest.tgz $BACKUP_ARCHIVE_PATH; then
-    echo "Downloaded"
+  if ls $BACKUP_ARCHIVE_PATH; then
+    echo "File Exist"
   else
     echo "Failed to download latest backup"
     exit 1
